@@ -15,7 +15,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
+            overflow-x: hidden; /* 가로 스크롤은 숨김 */
         }
 
         /* object 요소가 전체 화면을 채우도록 설정 */
@@ -24,10 +24,11 @@
             width: 100vw;
             height: 100vh;
             border: none; /* 경계선 제거 */
+            overflow-y: auto; /* 세로 스크롤은 자동으로 처리 */
         }
     </style>
 </head>
-<body style="margin: 0;">
+<body>
     <!-- OleMissv5.html 파일을 include -->
     <object type="text/html" data="OleMissv5.html"></object>
 </body>
