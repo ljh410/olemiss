@@ -9,9 +9,26 @@
     <link rel="icon" href="images_favicon/favicon.png" type="image/png">
 
     <title>올 미스 정보 글</title>
+    <style>
+        /* 바디 전체의 여백을 제거하고, 오버플로우는 숨김 처리 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* object 요소가 전체 화면을 채우도록 설정 */
+        object {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            border: none; /* 경계선 제거 */
+        }
+    </style>
 </head>
 <body style="margin: 0;">
     <!-- OleMissv5.html 파일을 include -->
-    <object type="text/html" data="OleMissv5.html" style="width: 100vw; height: 100vh; border: none;"></object>
+    <object type="text/html" data="OleMissv5.html"></object>
 </body>
 </html>
