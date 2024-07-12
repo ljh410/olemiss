@@ -2,29 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ole Miss Information</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images_favicon/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images_favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images_favicon/favicon.png">
     <meta name="theme-color" content="#ffffff">
     <style>
-        body, iframe {
+        body, html {
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100vh;
-            overflow: hidden;
+            height: 100%;
+            font-family: Arial, sans-serif;
         }
         iframe {
-            display: block;
             width: 100%;
             height: 100%;
             border: none;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
     </style>
 </head>
 <body>
-    <iframe src="OleMissv5.html"></iframe>
+    <div class="container">
+        <iframe src="OleMissv5.html"></iframe>
+    </div>
 </body>
 </html>
