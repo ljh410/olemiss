@@ -5,47 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ole Miss School Information</title>
     <link rel="icon" href="images_favicon/favicon.png" type="image/png">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-            font-family: Arial, sans-serif;
-        }
-        iframe {
-            border: none;
-            width: 100%;
-            height: 100vh;
-        }
-    </style>
+    <meta http-equiv="refresh" content="0; url=OleMissv5.html">
 </head>
 <body>
-    <iframe src="OleMissv5.html"></iframe>
-
-    <script>
-        // Adjust iframe content to fit the viewport width
-        document.addEventListener("DOMContentLoaded", function() {
-            var iframe = document.querySelector("iframe");
-            iframe.onload = function() {
-                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-                var style = document.createElement("style");
-                style.textContent = `
-                    body {
-                        margin: 0;
-                        padding: 0;
-                        width: 100%;
-                        overflow-x: hidden;
-                        box-sizing: border-box;
-                    }
-                    * {
-                        box-sizing: border-box;
-                    }
-                `;
-                iframeDocument.head.appendChild(style);
-            };
-        });
-    </script>
+    <p>If you are not redirected automatically, follow this <a href="OleMissv5.html">link to Ole Miss School Information</a>.</p>
 </body>
 </html>
