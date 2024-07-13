@@ -10,9 +10,13 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            overflow-x: hidden; /* 좌우 스크롤바를 없애기 위해 추가 */
         }
         #content {
             padding: 20px;
+            max-width: 100vw; /* 화면 너비에 맞게 조정 */
+            box-sizing: border-box; /* padding을 포함한 전체 크기 조정 */
+            overflow-wrap: break-word; /* 긴 단어들이 화면을 넘치지 않도록 조정 */
         }
     </style>
 </head>
@@ -22,7 +26,14 @@
         fetch('OleMissv5.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('content').innerHTML = data;
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = data;
+                
+                // 이미지나 기타 요소들의 최대 너비를 설정하여 화면에 맞추기
+                contentDiv.querySelectorAll('img, table').forEach(element => {
+                    element.style.maxWidth = '100%';
+                    element.style.height = 'auto';
+                });
             })
             .catch(error => console.error('Error loading the HTML content:', error));
     </script>
